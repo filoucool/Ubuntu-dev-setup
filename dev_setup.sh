@@ -22,6 +22,11 @@ sudo apt-get install -y texmaker
 sudo apt-get install -y gtg
 sudo apt-get install -y htop
 
+
+# Install VsCode
+sudo snap install code
+
+
 # Install Docker
 sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
