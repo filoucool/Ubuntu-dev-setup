@@ -17,6 +17,7 @@ read -p "Enter your email: " email
 read -sp "Enter your token: " token
 git config --global user.email "$email"
 git config --global user.token "$token"
+git config --global credential.helper store
 
 # Generate GPG key
 gpg --full-generate-key
