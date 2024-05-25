@@ -10,7 +10,7 @@ sudo apt-get install -y git
 sudo apt-get install -y docker
 sudo apt-get install -y vim
 sudo apt-get install -y curl
-# sudo apt-get install -y tmux
+sudo apt-get install -y tmux
 
 # Github login
 read -p "Enter your email: " email
