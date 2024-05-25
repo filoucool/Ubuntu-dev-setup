@@ -30,3 +30,8 @@ git config --global user.signingkey $key_id
 git config --global commit.gpgsign true
 
 echo "Git configured successfully."
+
+echo "Add this new GPG key to your github Account:"
+echo ""
+key=$(gpg --armor --export $key_id)
+echo "$key"
