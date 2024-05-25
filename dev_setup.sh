@@ -29,6 +29,9 @@ sudo snap install code
 # Install Spotify
 sudo snap install spotify
 
+# Install Slack
+sudo snap install slack --classic
+
 
 # Install Docker
 sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
