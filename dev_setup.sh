@@ -28,9 +28,9 @@ key_id=$(gpg --list-secret-keys --keyid-format LONG | grep sec | awk '{print $2}
 # Configure Git to use GPG key for signing commits
 git config --global user.signingkey $key_id
 git config --global commit.gpgsign true
-
 echo "Git configured successfully."
 
+# Return Full GPG key
 echo "Add this new GPG key to your github Account:"
 echo ""
 key=$(gpg --armor --export $key_id)
