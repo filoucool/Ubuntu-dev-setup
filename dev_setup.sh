@@ -12,7 +12,7 @@ sudo apt-get install -y vim
 sudo apt-get install -y curl
 sudo apt-get install -y tmux
 sudo apt-get install -y neovim
-
+sudo apt-get install -y texmaker
 
 # Github login
 read -p "Enter your email: " email
