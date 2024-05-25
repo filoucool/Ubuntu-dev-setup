@@ -9,7 +9,7 @@ sudo apt-get install -y tilix
 sudo apt-get install -y git
 # sudo apt-get install -y docker
 sudo apt-get install -y vim
-# sudo apt-get install -y curl
+sudo apt-get install -y curl
 # sudo apt-get install -y tmux
 
 # Github login
