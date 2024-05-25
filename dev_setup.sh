@@ -21,6 +21,7 @@ sudo apt-get install -y tmux
 sudo apt-get install -y neovim
 sudo apt-get install -y texmaker
 sudo apt-get install -y gtg
+sudo apt-get install -y htop
 
 # Github login
 read -p "Enter your email: " email
