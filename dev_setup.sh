@@ -14,7 +14,6 @@ sudo apt-get install google-chrome-stable
 # Install programs / utils
 sudo apt-get install -y tilix
 sudo apt-get install -y git
-sudo apt-get install -y docker
 sudo apt-get install -y vim
 sudo apt-get install -y curl
 sudo apt-get install -y tmux
@@ -22,6 +21,24 @@ sudo apt-get install -y neovim
 sudo apt-get install -y texmaker
 sudo apt-get install -y gtg
 sudo apt-get install -y htop
+
+# Install Docker
+sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+sudo apt-get install -y docker-ce
+sudo docker run hello-world
+
+
+# Install Docker Compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+docker-compose --version
+sudo usermod -aG docker ${USER}
+su - ${USER}
+docker run hello-world
+
 
 # Github login
 read -p "Enter your email: " email
